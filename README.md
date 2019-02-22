@@ -1,21 +1,26 @@
-gRPC-Java - An RPC library and framework
+Project under ConserVission Technologies
 ========================================
 
-gRPC-Java works with JDK 7. gRPC-Java clients are supported on Android API
-levels 14 and up (Ice Cream Sandwich and later). Deploying gRPC servers on an
-Android device is not supported.
+This project has two parts:
 
-TLS usage typically requires using Java 8, or Play Services Dynamic Security
-Provider on Android. Please see the [Security Readme](SECURITY.md).
+1. Applying various serialization protocols to imporve RPC throughput
+2. Service Discovery
+
+Directory Structure:
+--------------------
 
 <table>
   <tr>
-    <td><b>Homepage:</b></td>
-    <td><a href="https://grpc.io/">grpc.io</a></td>
+    <td><b>gRPC + Protobuf </b></td>
+    <td><a href="#">link</a></td>
   </tr>
   <tr>
-    <td><b>Mailing List:</b></td>
-    <td><a href="https://groups.google.com/forum/#!forum/grpc-io">grpc-io@googlegroups.com</a></td>
+    <td><b>gRPC + GSON</b></td>
+    <td><a href="#">link</a></td>
+  </tr>
+  <tr>
+    <td><b>gRPC + Cap'n Proto</b></td>
+    <td><a href="#">link</a></td>
   </tr>
 </table>
 
