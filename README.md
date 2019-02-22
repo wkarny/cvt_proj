@@ -15,7 +15,7 @@ Directory Structure:
     <td><a href="#">link</a></td>
   </tr>
   <tr>
-    <td><b>gRPC + GSON</b></td>
+    <td><b>gRPC + JSON</b></td>
     <td><a href="#">link</a></td>
   </tr>
   <tr>
@@ -27,7 +27,7 @@ Directory Structure:
 How to run:
 -----------
 
-To run 'gRPC + GSON' :
+To run 'gRPC + JSON' :
 
 ```bash
 $ cd kvstore
