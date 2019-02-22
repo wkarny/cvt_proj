@@ -23,3 +23,14 @@ Directory Structure:
     <td><a href="#">link</a></td>
   </tr>
 </table>
+
+How to run:
+-----------
+
+To run 'gRPC + GSON' :
+
+```bash
+$ cd kvstore
+$ ./gradlew clean installDist
+$ ./build/install/kvstore/bin/kvstore
+```
