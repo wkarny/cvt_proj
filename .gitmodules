@@ -1,0 +1,9 @@
+[submodule "grpc-java"]
+	path = grpc-java
+	url = https://github.com/wkarny/grpc-java.git
+[submodule "capnproto-java"]
+	path = capnproto-java
+	url = https://github.com/wkarny/capnproto-java.git
+[submodule "kvstore"]
+	path = kvstore
+	url = https://github.com/wkarny/kvstore.git
