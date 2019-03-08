@@ -1,0 +1,16 @@
+We took 100 iterations and done average 
+For protobuf : 
+	SPEED (default) mode : 
+		Avg time to encode : 48 millis
+		Encoding size : 42 bytes
+	CODE_SIZE mode :
+		Avg time to encode : 94 millis
+		Encoding size : 42 bytes
+	LITE_RUNTIME :
+		Avg time to encode : 36 millis
+		Encoding size : 42 bytes
+
+For capnp:
+	Avg time to encode : 20 millis
+	Encoding size : 71 bytes
+

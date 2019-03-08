@@ -7,3 +7,6 @@
 [submodule "kvstore"]
 	path = kvstore
 	url = https://github.com/wkarny/kvstore.git
+[submodule "protobuf"]
+	path = protobuf
+	url = https://github.com/wkarny/protobuf.git
