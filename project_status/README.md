@@ -12,6 +12,9 @@ Project Status
 | Serialization and deserialization of a binary file | [test](http://github.com/wkarny/protobuf) | Completed |
 | Testing on different jvms | | TBD |
 | Test gRPC with capnp | | TBD|
-| Comparison of capnp and protobuf with respect to gRPC | | TBD | 
+| Comparison of capnp and protobuf with respect to gRPC | | TBD |
 
+Results
+-------
 
+See results repo --> [Results repo](https://github.com/wkarny/cvt_proj/tree/master/results) 
