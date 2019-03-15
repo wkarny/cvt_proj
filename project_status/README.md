@@ -11,5 +11,7 @@ Project Status
 | Comparison of three optimization options for protobuf | [protobuf](http://github.com/wkarny/protobuf) | Completed |
 | Serialization and deserialization of a binary file | [test](http://github.com/wkarny/protobuf) | Completed |
 | Testing on different jvms | | TBD |
+| Test gRPC with capnp | | TBD|
+| Comparison of capnp and protobuf with respect to gRPC | | TBD | 
 
 
