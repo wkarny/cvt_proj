@@ -34,3 +34,8 @@ $ cd kvstore
 $ ./gradlew clean installDist
 $ ./build/install/kvstore/bin/kvstore
 ```
+
+Status:
+-------
+
+Project status ----> [status](https://github.com/wkarny/cvt_proj/tree/master/project_status)
