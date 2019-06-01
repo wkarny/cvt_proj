@@ -1,2 +1,2 @@
 #! /bin/sh
-java -classpath .:$CLASSPATH AddPerson "$@"
+java -classpath .:$CLASSPATH:/home/wyes/proj/cvt_proj/capnproto-java/runtime/target/classes:/home/wyes/proj/cvt_proj/capnproto-java/examples/target/classes AddPerson "$@"

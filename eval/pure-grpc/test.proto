@@ -1,0 +1,23 @@
+syntax = "proto3";
+package test;
+
+
+option java_multiple_files = true;
+option java_package = "com.grpc.test";
+option java_outer_classname = "TestProto";
+
+
+//option optimize_for = SPEED;
+service TestService {
+  rpc TestRPC (TestRequest) returns (TestReply) {}
+}
+
+message TestRequest {
+  string name = 1;
+}
+
+
+message TestReply {
+  string name = 1;
+}
+

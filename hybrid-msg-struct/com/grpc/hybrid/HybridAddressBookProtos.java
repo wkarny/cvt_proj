@@ -2859,6 +2859,484 @@ public final class HybridAddressBookProtos {
 
   }
 
+  public interface CapnpWrapperOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:tutorial.CapnpWrapper)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>bytes data = 1;</code>
+     */
+    com.google.protobuf.ByteString getData();
+  }
+  /**
+   * Protobuf type {@code tutorial.CapnpWrapper}
+   */
+  public  static final class CapnpWrapper extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:tutorial.CapnpWrapper)
+      CapnpWrapperOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use CapnpWrapper.newBuilder() to construct.
+    private CapnpWrapper(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private CapnpWrapper() {
+      data_ = com.google.protobuf.ByteString.EMPTY;
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private CapnpWrapper(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+
+              data_ = input.readBytes();
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.grpc.hybrid.HybridAddressBookProtos.internal_static_tutorial_CapnpWrapper_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.grpc.hybrid.HybridAddressBookProtos.internal_static_tutorial_CapnpWrapper_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper.class, com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper.Builder.class);
+    }
+
+    public static final int DATA_FIELD_NUMBER = 1;
+    private com.google.protobuf.ByteString data_;
+    /**
+     * <code>bytes data = 1;</code>
+     */
+    public com.google.protobuf.ByteString getData() {
+      return data_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (!data_.isEmpty()) {
+        output.writeBytes(1, data_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!data_.isEmpty()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, data_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper)) {
+        return super.equals(obj);
+      }
+      com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper other = (com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper) obj;
+
+      if (!getData()
+          .equals(other.getData())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + DATA_FIELD_NUMBER;
+      hash = (53 * hash) + getData().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code tutorial.CapnpWrapper}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:tutorial.CapnpWrapper)
+        com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapperOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.grpc.hybrid.HybridAddressBookProtos.internal_static_tutorial_CapnpWrapper_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.grpc.hybrid.HybridAddressBookProtos.internal_static_tutorial_CapnpWrapper_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper.class, com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper.Builder.class);
+      }
+
+      // Construct using com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        data_ = com.google.protobuf.ByteString.EMPTY;
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.grpc.hybrid.HybridAddressBookProtos.internal_static_tutorial_CapnpWrapper_descriptor;
+      }
+
+      @java.lang.Override
+      public com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper getDefaultInstanceForType() {
+        return com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper build() {
+        com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper buildPartial() {
+        com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper result = new com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper(this);
+        result.data_ = data_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper) {
+          return mergeFrom((com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper other) {
+        if (other == com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper.getDefaultInstance()) return this;
+        if (other.getData() != com.google.protobuf.ByteString.EMPTY) {
+          setData(other.getData());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private com.google.protobuf.ByteString data_ = com.google.protobuf.ByteString.EMPTY;
+      /**
+       * <code>bytes data = 1;</code>
+       */
+      public com.google.protobuf.ByteString getData() {
+        return data_;
+      }
+      /**
+       * <code>bytes data = 1;</code>
+       */
+      public Builder setData(com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        data_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bytes data = 1;</code>
+       */
+      public Builder clearData() {
+        
+        data_ = getDefaultInstance().getData();
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:tutorial.CapnpWrapper)
+    }
+
+    // @@protoc_insertion_point(class_scope:tutorial.CapnpWrapper)
+    private static final com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper();
+    }
+
+    public static com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<CapnpWrapper>
+        PARSER = new com.google.protobuf.AbstractParser<CapnpWrapper>() {
+      @java.lang.Override
+      public CapnpWrapper parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new CapnpWrapper(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<CapnpWrapper> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<CapnpWrapper> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   public interface HybridAddressBookOrBuilder extends
       // @@protoc_insertion_point(interface_extends:tutorial.HybridAddressBook)
       com.google.protobuf.MessageOrBuilder {
@@ -2882,9 +3360,17 @@ public final class HybridAddressBookProtos {
     com.grpc.hybrid.HybridAddressBookProtos.AddressBookOrBuilder getAddressbookProtoOrBuilder();
 
     /**
-     * <code>bytes addressbook_capnp = 3;</code>
+     * <code>.tutorial.CapnpWrapper addressbook_capnp = 3;</code>
      */
-    com.google.protobuf.ByteString getAddressbookCapnp();
+    boolean hasAddressbookCapnp();
+    /**
+     * <code>.tutorial.CapnpWrapper addressbook_capnp = 3;</code>
+     */
+    com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper getAddressbookCapnp();
+    /**
+     * <code>.tutorial.CapnpWrapper addressbook_capnp = 3;</code>
+     */
+    com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapperOrBuilder getAddressbookCapnpOrBuilder();
 
     public com.grpc.hybrid.HybridAddressBookProtos.HybridAddressBook.MsgCase getMsgCase();
   }
@@ -2947,8 +3433,17 @@ public final class HybridAddressBookProtos {
               break;
             }
             case 26: {
+              com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper.Builder subBuilder = null;
+              if (msgCase_ == 3) {
+                subBuilder = ((com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper) msg_).toBuilder();
+              }
+              msg_ =
+                  input.readMessage(com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper) msg_);
+                msg_ = subBuilder.buildPartial();
+              }
               msgCase_ = 3;
-              msg_ = input.readBytes();
               break;
             }
             default: {
@@ -3058,13 +3553,28 @@ public final class HybridAddressBookProtos {
 
     public static final int ADDRESSBOOK_CAPNP_FIELD_NUMBER = 3;
     /**
-     * <code>bytes addressbook_capnp = 3;</code>
+     * <code>.tutorial.CapnpWrapper addressbook_capnp = 3;</code>
      */
-    public com.google.protobuf.ByteString getAddressbookCapnp() {
+    public boolean hasAddressbookCapnp() {
+      return msgCase_ == 3;
+    }
+    /**
+     * <code>.tutorial.CapnpWrapper addressbook_capnp = 3;</code>
+     */
+    public com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper getAddressbookCapnp() {
       if (msgCase_ == 3) {
-        return (com.google.protobuf.ByteString) msg_;
+         return (com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper) msg_;
       }
-      return com.google.protobuf.ByteString.EMPTY;
+      return com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper.getDefaultInstance();
+    }
+    /**
+     * <code>.tutorial.CapnpWrapper addressbook_capnp = 3;</code>
+     */
+    public com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapperOrBuilder getAddressbookCapnpOrBuilder() {
+      if (msgCase_ == 3) {
+         return (com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper) msg_;
+      }
+      return com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper.getDefaultInstance();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -3088,8 +3598,7 @@ public final class HybridAddressBookProtos {
         output.writeMessage(2, (com.grpc.hybrid.HybridAddressBookProtos.AddressBook) msg_);
       }
       if (msgCase_ == 3) {
-        output.writeBytes(
-            3, (com.google.protobuf.ByteString) msg_);
+        output.writeMessage(3, (com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper) msg_);
       }
       unknownFields.writeTo(output);
     }
@@ -3110,8 +3619,7 @@ public final class HybridAddressBookProtos {
       }
       if (msgCase_ == 3) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(
-              3, (com.google.protobuf.ByteString) msg_);
+          .computeMessageSize(3, (com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper) msg_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -3340,7 +3848,11 @@ public final class HybridAddressBookProtos {
           }
         }
         if (msgCase_ == 3) {
-          result.msg_ = msg_;
+          if (addressbookCapnpBuilder_ == null) {
+            result.msg_ = msg_;
+          } else {
+            result.msg_ = addressbookCapnpBuilder_.build();
+          }
         }
         result.msgCase_ = msgCase_;
         onBuilt();
@@ -3400,7 +3912,7 @@ public final class HybridAddressBookProtos {
             break;
           }
           case ADDRESSBOOK_CAPNP: {
-            setAddressbookCapnp(other.getAddressbookCapnp());
+            mergeAddressbookCapnp(other.getAddressbookCapnp());
             break;
           }
           case MSG_NOT_SET: {
@@ -3613,37 +4125,140 @@ public final class HybridAddressBookProtos {
         return addressbookProtoBuilder_;
       }
 
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper, com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper.Builder, com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapperOrBuilder> addressbookCapnpBuilder_;
       /**
-       * <code>bytes addressbook_capnp = 3;</code>
+       * <code>.tutorial.CapnpWrapper addressbook_capnp = 3;</code>
        */
-      public com.google.protobuf.ByteString getAddressbookCapnp() {
-        if (msgCase_ == 3) {
-          return (com.google.protobuf.ByteString) msg_;
-        }
-        return com.google.protobuf.ByteString.EMPTY;
+      public boolean hasAddressbookCapnp() {
+        return msgCase_ == 3;
       }
       /**
-       * <code>bytes addressbook_capnp = 3;</code>
+       * <code>.tutorial.CapnpWrapper addressbook_capnp = 3;</code>
        */
-      public Builder setAddressbookCapnp(com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  msgCase_ = 3;
-        msg_ = value;
-        onChanged();
+      public com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper getAddressbookCapnp() {
+        if (addressbookCapnpBuilder_ == null) {
+          if (msgCase_ == 3) {
+            return (com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper) msg_;
+          }
+          return com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper.getDefaultInstance();
+        } else {
+          if (msgCase_ == 3) {
+            return addressbookCapnpBuilder_.getMessage();
+          }
+          return com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.tutorial.CapnpWrapper addressbook_capnp = 3;</code>
+       */
+      public Builder setAddressbookCapnp(com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper value) {
+        if (addressbookCapnpBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          msg_ = value;
+          onChanged();
+        } else {
+          addressbookCapnpBuilder_.setMessage(value);
+        }
+        msgCase_ = 3;
         return this;
       }
       /**
-       * <code>bytes addressbook_capnp = 3;</code>
+       * <code>.tutorial.CapnpWrapper addressbook_capnp = 3;</code>
+       */
+      public Builder setAddressbookCapnp(
+          com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper.Builder builderForValue) {
+        if (addressbookCapnpBuilder_ == null) {
+          msg_ = builderForValue.build();
+          onChanged();
+        } else {
+          addressbookCapnpBuilder_.setMessage(builderForValue.build());
+        }
+        msgCase_ = 3;
+        return this;
+      }
+      /**
+       * <code>.tutorial.CapnpWrapper addressbook_capnp = 3;</code>
+       */
+      public Builder mergeAddressbookCapnp(com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper value) {
+        if (addressbookCapnpBuilder_ == null) {
+          if (msgCase_ == 3 &&
+              msg_ != com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper.getDefaultInstance()) {
+            msg_ = com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper.newBuilder((com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper) msg_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            msg_ = value;
+          }
+          onChanged();
+        } else {
+          if (msgCase_ == 3) {
+            addressbookCapnpBuilder_.mergeFrom(value);
+          }
+          addressbookCapnpBuilder_.setMessage(value);
+        }
+        msgCase_ = 3;
+        return this;
+      }
+      /**
+       * <code>.tutorial.CapnpWrapper addressbook_capnp = 3;</code>
        */
       public Builder clearAddressbookCapnp() {
-        if (msgCase_ == 3) {
-          msgCase_ = 0;
-          msg_ = null;
-          onChanged();
+        if (addressbookCapnpBuilder_ == null) {
+          if (msgCase_ == 3) {
+            msgCase_ = 0;
+            msg_ = null;
+            onChanged();
+          }
+        } else {
+          if (msgCase_ == 3) {
+            msgCase_ = 0;
+            msg_ = null;
+          }
+          addressbookCapnpBuilder_.clear();
         }
         return this;
+      }
+      /**
+       * <code>.tutorial.CapnpWrapper addressbook_capnp = 3;</code>
+       */
+      public com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper.Builder getAddressbookCapnpBuilder() {
+        return getAddressbookCapnpFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.tutorial.CapnpWrapper addressbook_capnp = 3;</code>
+       */
+      public com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapperOrBuilder getAddressbookCapnpOrBuilder() {
+        if ((msgCase_ == 3) && (addressbookCapnpBuilder_ != null)) {
+          return addressbookCapnpBuilder_.getMessageOrBuilder();
+        } else {
+          if (msgCase_ == 3) {
+            return (com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper) msg_;
+          }
+          return com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.tutorial.CapnpWrapper addressbook_capnp = 3;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper, com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper.Builder, com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapperOrBuilder> 
+          getAddressbookCapnpFieldBuilder() {
+        if (addressbookCapnpBuilder_ == null) {
+          if (!(msgCase_ == 3)) {
+            msg_ = com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper.getDefaultInstance();
+          }
+          addressbookCapnpBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper, com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper.Builder, com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapperOrBuilder>(
+                  (com.grpc.hybrid.HybridAddressBookProtos.CapnpWrapper) msg_,
+                  getParentForChildren(),
+                  isClean());
+          msg_ = null;
+        }
+        msgCase_ = 3;
+        onChanged();;
+        return addressbookCapnpBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -3714,6 +4329,11 @@ public final class HybridAddressBookProtos {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_tutorial_AddressBook_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_tutorial_CapnpWrapper_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_tutorial_CapnpWrapper_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_tutorial_HybridAddressBook_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -3736,12 +4356,13 @@ public final class HybridAddressBookProtos {
       "r\030\001 \001(\t\022(\n\004type\030\002 \001(\0162\032.tutorial.Person." +
       "PhoneType\"+\n\tPhoneType\022\n\n\006MOBILE\020\000\022\010\n\004HO" +
       "ME\020\001\022\010\n\004WORK\020\002\"/\n\013AddressBook\022 \n\006people\030" +
-      "\001 \003(\0132\020.tutorial.Person\"}\n\021HybridAddress" +
-      "Book\022\020\n\010msg_type\030\001 \001(\005\0222\n\021addressbook_pr" +
-      "oto\030\002 \001(\0132\025.tutorial.AddressBookH\000\022\033\n\021ad" +
-      "dressbook_capnp\030\003 \001(\014H\000B\005\n\003msgB,\n\017com.gr" +
-      "pc.hybridB\027HybridAddressBookProtosH\001b\006pr" +
-      "oto3"
+      "\001 \003(\0132\020.tutorial.Person\"\034\n\014CapnpWrapper\022" +
+      "\014\n\004data\030\001 \001(\014\"\225\001\n\021HybridAddressBook\022\020\n\010m" +
+      "sg_type\030\001 \001(\005\0222\n\021addressbook_proto\030\002 \001(\013" +
+      "2\025.tutorial.AddressBookH\000\0223\n\021addressbook" +
+      "_capnp\030\003 \001(\0132\026.tutorial.CapnpWrapperH\000B\005" +
+      "\n\003msgB,\n\017com.grpc.hybridB\027HybridAddressB" +
+      "ookProtosH\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -3774,8 +4395,14 @@ public final class HybridAddressBookProtos {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tutorial_AddressBook_descriptor,
         new java.lang.String[] { "People", });
-    internal_static_tutorial_HybridAddressBook_descriptor =
+    internal_static_tutorial_CapnpWrapper_descriptor =
       getDescriptor().getMessageTypes().get(2);
+    internal_static_tutorial_CapnpWrapper_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_tutorial_CapnpWrapper_descriptor,
+        new java.lang.String[] { "Data", });
+    internal_static_tutorial_HybridAddressBook_descriptor =
+      getDescriptor().getMessageTypes().get(3);
     internal_static_tutorial_HybridAddressBook_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tutorial_HybridAddressBook_descriptor,

@@ -37,10 +37,14 @@ message AddressBook {
   repeated Person people = 1;
 }
 
+message CapnpWrapper {
+  bytes data = 1;
+}
+
 message HybridAddressBook {
   int32 msg_type = 1;
   oneof msg {
     AddressBook addressbook_proto = 2;
-    bytes addressbook_capnp = 3;
+    CapnpWrapper addressbook_capnp = 3;
   }
 }
